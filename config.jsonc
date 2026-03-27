@@ -1,0 +1,154 @@
+
+
+{
+  "layer": "top",
+  "position": "top",
+  "height": 56,
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "wlr/taskbar"
+  ],
+
+  "modules-center": [
+ 
+    "clock"
+
+  ],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "network",
+    "bluetooth",
+    "backlight",
+    "temperature",
+    "pulseaudio",
+    "battery",
+    "custom/power"
+
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "persistent-workspaces": {
+      "*": 4
+    }
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip-format": "{title}"
+  },
+
+  "clock": {
+    "format":"{:%a %d %b %I:%M %p} ♡♬夢"
+ },
+
+ 
+
+
+  "cpu": {
+    "format": "  {usage}%",
+    "on-click": "foot -e btop"
+  },
+
+  "memory": {
+    "format": "󰍛 {percentage}%",
+    "on-click": "foot -e htop"
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀  Ethernet",
+    "format-disconnected": "⚠  Offline",
+    "on-click": "foot -e nmtui"
+  },
+
+  "bluetooth": {
+    "format": " {status}",
+    "on-click": "blueman-manager"
+  },
+
+  "temperature": {
+    "format": " {temperatureC}°C"
+  },
+
+  "backlight": {
+    "format": "光 {percent}%",
+    "on-click": "foot -e brightnessctl"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": "  ʂhhhh",
+    "on-click": "pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+  },
+
+
+"battery": {
+ 
+  "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+
+
+
+
+  "format-full": "<span foreground='#f3c1c6'>{icon}  <span foreground='#ffffff'>{capacity}%</span></span>",
+
+
+
+"format-critical": "<span foreground='#ff0000'>{icon}  <span foreground='#ffffff'>{capacity}%</span></span>",
+ 
+
+
+"format-warning": "<span foreground='#Ff5f15'>{icon}  <span foreground= '#ffffff'>{capacity}%</span></span>",
+
+
+
+"format-charging": "<span foreground='#f3c1c6'>{icon} <span foreground='#ffffff'>{capacity}%</span></span>",
+
+
+
+ "format-disconnected":"<span foreground='#ffffff'>{icon} <span foreground='#ffffff'> {capacity}%</span> </span>",
+
+
+
+
+
+
+
+
+"states": {
+    "warning": 30,
+    "critical":20,
+    "disconnected":99,
+    "format-charging": 100 
+
+
+
+  },
+  "interval": 3,
+  "markup": true
+},
+
+
+/* boton personalizable en proceso */
+
+
+  "custom/power": {
+    
+"format": "⏻",
+    "on-click": "~/.config/powermenu.sh",
+    "tooltip": false
+
+
+  }
+
+}
+
+
+
