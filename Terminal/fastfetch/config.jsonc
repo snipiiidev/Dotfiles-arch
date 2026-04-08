@@ -1,0 +1,100 @@
+{
+  "logo": {
+    "type": "kitty",
+    "source": "/home/user/fastfetch//fastfetchicon/as2.png",
+    "width": 30,
+    "height": 18,
+    "padding": {
+      
+"left": 2, 
+    "right": 1
+    }
+  },
+
+  "display": {
+    "separator": "  "
+  },
+
+  "modules": [
+    "title",
+    "separator",
+
+    {
+      "type": "os",
+      "key": "OS",
+      "keyColor": 33
+    },
+
+   {
+
+ "type": "command",
+  "key": "Os Age",
+  "shell": "bash",
+  "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
+
+   },
+
+    {
+      "type": "kernel",
+      "key": "Kernel",
+      "keyColor": 33
+    },
+   {
+      "type": "uptime",
+      "key": "Uptime",
+      "keyColor": 33
+    },
+    {
+      "type": "packages",
+      "key": "Packages",
+      "keyColor": 33
+    },
+    {
+      "type": "shell",
+      "key": "Shell",
+      "keyColor": 33
+    },
+    {
+      "type": "terminal",
+      "key": "Terminal",
+      "keyColor": 33
+    },
+    {
+      "type": "wm",
+      "key": "WM",
+      "keyColor": 33
+    },
+    {
+      "type": "theme",
+      "key": "Theme",
+      "keyColor": 33
+    },
+    {
+      "type": "icons",
+      "key": "Icons",
+      "keyColor": 33
+    },
+    {
+      "type": "cpu",
+      "key": "CPU",
+      "keyColor": 33
+    },
+    
+    {
+      "type": "memory",
+      "key": "Memory",
+      "keyColor": 33
+    },
+    {
+      "type": "disk",
+      "key": "Disk",
+      "keyColor": 33
+    },
+    {
+      "type": "battery",
+      "key": "Battery",
+      "keyColor": 33
+    
+}
+]
+} 
