@@ -1,4 +1,4 @@
-# My Hyprland Configurationn
+# My Hyprland Configuration
 
 This repository contains some of my personal Arch Linux (Hyprland) configurations, along with Waybar and Wofi, focused on a clean and functional design
 
