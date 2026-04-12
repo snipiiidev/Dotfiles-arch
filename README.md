@@ -26,10 +26,10 @@ Fastfetch
 Clone the repository
 
 ```
-git clone https://github.com/snipiiidev/Waybar-Arch-.git
+git clone https://github.com/snipiiidev/Dotfiles-arch.git
 ```
 ```
-cd Waybar-Arch
+cd Dotfiles-arch
 ```
 Copy the configuration files to your system:
 ```
