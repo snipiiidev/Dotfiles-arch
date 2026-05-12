@@ -11,7 +11,7 @@ window {
 #inner-box {
     display: flex;
     flex-direction: column;
-    align-items: center;   /* 🔥 centra horizontal */
+    align-items: center;   
 }
 
 #entry {
@@ -19,7 +19,7 @@ window {
     margin: 4px;
     border-radius: 8px;
     text-align: center;
-    width: 100%; /* ocupa ancho pero centrado */
+    width: 100%; 
 }
 
 #entry:selected {
@@ -31,6 +31,6 @@ window {
     color: #cdd6f4;
     font-size: 15px;
     font-weight: bold;
-    text-align: center; /* 🔥 centra texto */
+    text-align: center; 
    font-family: "jetBrainsMono Nerd Font";
   }
